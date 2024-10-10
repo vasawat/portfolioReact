@@ -60,6 +60,9 @@ return (
                   '& .css-19wsa2m-MuiButtonBase-root-MuiTab-root.Mui-selected': {
                     color: '#48CFCB',
                   },
+                  '& .css-9gnw14.Mui-selected': {
+                    color: '#48CFCB',
+                  },
                 }} aria-label="header">
                   <Tab label="Home" />
                   <Tab label="About Me" />
