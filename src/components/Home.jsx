@@ -6,12 +6,14 @@ import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 //
 
+import DialogProject from "../widgets/DialogProject";
+
+import data from "../data/project"
 
 
 export default function Home(params) {
     
     const [visible, setVisible] = useState(false);
-
     const [valueTab, setValueTab] = useState(0);
 
     const handleChangeTab = (event, newValue) => {
@@ -30,7 +32,7 @@ export default function Home(params) {
         const timer = setTimeout(() => {
         setVisible(true); 
         }, 11000);
-
+        console.log('data', data)
         return () => clearTimeout(timer);
     }, []);
 
@@ -61,6 +63,9 @@ return (
                     color: '#48CFCB',
                   },
                   '& .css-9gnw14.Mui-selected': {
+                    color: '#48CFCB',
+                  },
+                  '& .css-1usuzwp-MuiButtonBase-root-MuiTab-root.Mui-selected': {
                     color: '#48CFCB',
                   },
                 }} aria-label="header">
@@ -233,14 +238,30 @@ return (
           <p className="text-5xl text-center font-bold mb-10">My Projects</p>
           <p className="text-center opacity-70 text-xl mb-10">wait my backend around 1 min</p>
           <div className="grid grid-cols-2 gap-10">
-            <div>
+            {data.map((project) => (
+                <div>
+                  <a href={project.link}>
+                    <img src={project.image} className="w-full h-72 object-cover" alt="vonble" />
+                  </a>
+                  <div className="mt-5">
+                    <div className="flex justify-between">
+                      <p className="text-3xl font-bold text-[#48CFCB]">{project.name}</p>
+                      <p><DialogProject name={project.name} link={project.link} description={project.description} image={project.image} /></p>
+                    </div>
+                    
+                    <p className="opacity-70 mt-5 line-clamp-3">{project.description}</p>
+                    
+                  </div>
+                </div>
+            ))}
+            {/* <div>
               <a href="https://vonble.netlify.app/">
                 <img src="/images/projectVonble.png" className="w-full h-72 object-cover" alt="vonble" />
               </a>
               <div className="mt-5">
                 <p className="text-3xl font-bold text-[#48CFCB]">Vonble</p>
                 <p className="opacity-70">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-                <p>Detail</p>
+                <p><DialogProject /></p>
               </div>
             </div>
             <div>
@@ -302,7 +323,7 @@ return (
                 <p className="opacity-70">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
                 <p>Detail</p>
               </div>
-            </div>
+            </div> */}
           </div>
           <div id="sectionTab4"></div>
         </section>
