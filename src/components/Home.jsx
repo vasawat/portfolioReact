@@ -54,18 +54,9 @@ return (
                     color: 'white',
                   },
                   '& .Mui-selected': {
-                    color: '#48CFCB',
+                    color: '#48CFCB !important' ,
                   },
                   '& .MuiTab-root:hover': {
-                    color: '#48CFCB',
-                  },
-                  '& .css-19wsa2m-MuiButtonBase-root-MuiTab-root.Mui-selected': {
-                    color: '#48CFCB',
-                  },
-                  '& .css-9gnw14.Mui-selected': {
-                    color: '#48CFCB',
-                  },
-                  '& .css-1usuzwp-MuiButtonBase-root-MuiTab-root.Mui-selected': {
                     color: '#48CFCB',
                   },
                 }} aria-label="header">
@@ -237,7 +228,7 @@ return (
         <section  className="max-w-6xl mx-auto mt-24">
           <p className="text-5xl text-center font-bold mb-10">My Projects</p>
           <p className="text-center opacity-70 text-xl mb-10">wait my backend around 1 min</p>
-          <div className="grid grid-cols-2 gap-10">
+          <div className="grid grid-cols-2 gap-14">
             {data.map((project) => (
                 <div>
                   <a href={project.link}>
