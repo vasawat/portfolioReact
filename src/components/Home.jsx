@@ -129,8 +129,8 @@ return (
               </div>
               
             </div>
-            <div>
-                <img src="/images/section1.png" alt="vasawat" />
+            <div className="flex justify-center">
+                <img className="h-auto w-96" src="/images/section1.png" alt="vasawat" />
             </div>
             <div id="sectionTab1"/>
           </section>
