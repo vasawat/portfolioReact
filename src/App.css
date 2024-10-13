@@ -77,3 +77,17 @@ li:nth-child(even) {
   0% { transform: translateX(0%); }
   100% { transform: translateX(-100%); }
 }
+
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+  display: none;
+}
+  body {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+}
