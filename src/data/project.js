@@ -8,7 +8,7 @@ const data = [
     {
         "name": "ThatakoClub",
         "link": "https://thatakopittayakom.netlify.app/",
-        "description": "ThatakoClub is a club selection website built with React, Node.js, Express, and MongoDB, designed for teachers to manage student clubs. Teachers can browse available clubs, view the supervising teacher, see and add students to a club, and print the entire student list as a PDF. Additionally, student data can be imported from an Excel file for easy management.",
+        "description": "ThatakoClub is a club selection website built with React, Node.js, Express, and MongoDB, designed for teachers to manage student clubs. Teachers can browse available clubs, view the supervising teacher, see and add students to a club, and print the entire student list as a PDF. Additionally, student data can be uploaded from an Excel file for easy management.",
         "image": "/images/projectTclub.png"
     },
     {
