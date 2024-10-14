@@ -304,7 +304,7 @@ return (
         <>
           <section className="max-w-6xl mt-24">
             <p className="text-5xl text-center font-bold">My Skills</p>
-            <div className="grid grid-cols-2 gap-4 my-20">
+            <div className="grid grid-cols-2 gap-48 my-20">
               <ul className="flex flex-col gap-4 text-xl text-center opacity-80 font-bold ">
                   <li>HTML</li>
                   <li>CSS</li>
@@ -327,7 +327,9 @@ return (
               </ul>
             </div>
             
-            <div className="overflow-hidden relative my-28">
+            
+          </section>
+            <div className="overflow-hidden relative my-28 ">
 
               <div className="marquee absolute top-0 left-0" style={{ paddingLeft: "5rem" }}>
                   <div className="flex gap-20 text-xl font-bold text-center">
@@ -413,7 +415,6 @@ return (
 
             </div>
             <div id="sectionTab3"></div>
-          </section>
         </>
       )}
         
