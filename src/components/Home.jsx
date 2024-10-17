@@ -195,6 +195,7 @@ return (
                   <li>CSS</li>
                   <li>JavaScript</li>
                   <li>React</li>
+                  <li>React Native</li>
                   <li>Next.js</li>
                   <li>Angular</li>
                   <li>Tailwind</li>
@@ -310,6 +311,7 @@ return (
                   <li>CSS</li>
                   <li>JavaScript</li>
                   <li>React</li>
+                  <li>React Native</li>
                   <li>Next.js</li>
                   <li>Angular</li>
                   <li>Tailwind</li>
