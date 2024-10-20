@@ -52,7 +52,7 @@ export default function DialogProject(params) {
                 open={open}
             >
                 <DialogTitle sx={{ m: 0, p: 2, color: '#48CFCB' }} id="customized-dialog-title">
-                    <p className='text-2xl font-bold'>{name} <span className='opacity-70'>(wait my backend around 1 min)</span></p>
+                    <p className='text-2xl font-bold'>{name} <span className='opacity-70 text-xs'>(wait my backend around 1 min)</span></p>
                 </DialogTitle>
                 <IconButton aria-label="close" onClick={handleClose}
                 sx={(theme) => ({
