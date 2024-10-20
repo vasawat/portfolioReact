@@ -204,6 +204,8 @@ return (
               <ul className="flex flex-col gap-4 text-xl text-center opacity-80 font-bold ">
                   <li>Node.js</li>
                   <li>Express</li>
+                  <li>c#</li>
+                  <li>.NET</li>
                   <li>MongoDB</li>
                   <li>MySQL</li>
                   <li>PostgreSQL</li>
