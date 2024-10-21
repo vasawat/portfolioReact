@@ -452,7 +452,7 @@ return (
         <>
           <section  className="max-w-6xl mx-auto mt-24">
             <p className="text-5xl text-center font-bold mb-10">My Projects</p>
-            <p className="text-center opacity-70 text-xl mb-10">wait my backend around 1 min</p>
+            <p className="text-center opacity-70 text-xl mb-10">some project need to wait for my backend around 1 min</p>
             <div className="grid grid-cols-2 gap-14">
               {data.map((project) => (
                   <div>
